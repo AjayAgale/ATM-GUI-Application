@@ -8,7 +8,7 @@ public class SmartATM extends JFrame implements ActionListener {
     private double balance = 0;
     private String userPIN;
     private JTextField amountField;
-    private JButton depositBtn, withdrawBtn, checkBalanceBtn, resetPinBtn, exitBtn; // ✅ resetPinBtn added
+    private JButton depositBtn, withdrawBtn, checkBalanceBtn, resetPinBtn, exitBtn; 
     private JLabel messageLabel;
     private JTextArea historyArea;
     private ArrayList<String> transactionHistory = new ArrayList<>();
@@ -62,7 +62,7 @@ public class SmartATM extends JFrame implements ActionListener {
         depositBtn = createButton("Deposit", 50, 120);
         withdrawBtn = createButton("Withdraw", 230, 120);
         checkBalanceBtn = createButton("Check Balance", 410, 120);
-        resetPinBtn = createButton("Reset PIN", 230, 165); // ✅ Correct position and added
+        resetPinBtn = createButton("Reset PIN", 230, 165); 
 
         mainPanel.add(depositBtn);
         mainPanel.add(withdrawBtn);
